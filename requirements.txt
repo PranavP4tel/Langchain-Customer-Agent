@@ -11,3 +11,4 @@ numpy
 chromadb
 sentence-transformers
 protobuf==3.20.*
+pysqlite3-binary
