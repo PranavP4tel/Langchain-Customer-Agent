@@ -11,3 +11,4 @@ numpy
 chromadb
 sentence-transformers
 protobuf==3.20.*
+sqlite3 >= 3.35.0
