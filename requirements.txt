@@ -1,0 +1,9 @@
+langchain
+langchain-core
+langchain-community
+langchain-google-genai
+duckduckgo-search
+streamlit
+langchain-huggingface
+langchain-chroma
+langgraph
