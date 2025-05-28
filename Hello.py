@@ -30,7 +30,7 @@ for message in st.session_state.messages:
 prompt = st.chat_input("Ask away...")
 
 
-if prompt:
+if prompt and GOOGLE_API_KEY:
     with st.chat_message("user"):
         st.markdown(prompt)
     
@@ -46,3 +46,5 @@ if prompt:
 
         except Exception as e:
             st.markdown(f"Exception: {e}")
+else:
+    st.warning('Please provide a prompt and an API Key (in the sidebar)', icon="⚠️")
