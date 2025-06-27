@@ -58,9 +58,9 @@ vector_store = load_vector_store()
 @tool
 def retrieve(question: str) -> str:
     """Use this tool to search the vector store for relevant answers to use queries.
-    If you that the responses matched the user queries then do not query the vector store again.
+    If you think that the responses matched the user queries then do not query the vector store again.
     Otherwise, try again with different variations of the question to obtain results.
-    Do not go beyond 3 tries of querying the vector store, use search tool."""
+    Do not go beyond 3 tries of querying the vector store, use another tool (if provided)."""
   
     retrieved_docs = vector_store.similarity_search(question, k = 3)
     combined_context = "\n\n".join([doc.page_content for doc in retrieved_docs])
