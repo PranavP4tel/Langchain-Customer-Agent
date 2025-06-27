@@ -4,8 +4,8 @@ Description - An interactive customer agent built with Streamlit, Langchain, Gem
 Using a web-based chat interface, the user queries are taken and the agent will search the vector database for the relevant answer, providing them back to the customer.
 It also maintains context via a chat history and saves conversation status as Completed (C), Urgent (U) or Incomplete (I), coupling it with the customer ID for follow-ups or further human intervention.
 
----
-Workflow:
+
+## Workflow:
 1. Interface - A Streamlit based interface that accepts a Gemini API Key to enable the conversation. Saves the chat history in the session and makes function calls to the agent, retrieving and displaying the results.
 2. Data Preprocessing & Transformation - Reading the dataset and performing data cleaning. Create a persistent vector store and saving the embedded FAQs for use by the agent.
 3. Agent - A Langchain based agent that makes use of:
@@ -19,11 +19,11 @@ There is also a 'search' tool created, that can allow the agent to search releva
 <br/><br/>
 There are various areas of improvement in this project and I hope to accomplish them along the way. I would be happy to receive any feedback, suggestions or improvements and inculcate them within the application.
 
----
-References:
+
+## References:
 1. Dataset: [hf://datasets/MakTek/Customer_support_faqs_dataset/train_expanded.json](https://huggingface.co/datasets/MakTek/Customer_support_faqs_dataset)
 2. Langchain Documentation
 3. Gemini API Key obtained from Google's AI Studio
 
 ---
-You can view the app here: https://langchain-customer-agent.streamlit.app/
+**You can view the app here:** https://langchain-customer-agent.streamlit.app/
