@@ -13,13 +13,13 @@ import pandas as pd
 
 #Creating the intructions for the agent to follow
 #This message is to be used in conjunction with the search tool
-system_message = """You are a helpful customer service assistant to solve user queries regarding the products and services of ABC Corp.
-When answering a user's question, use the tools provided to you.
-Make sure to use the 'retrieve' tool first, and if you do not find the answer, then use the 'search' tool
-After using a tool, the tool output will be provided back to you. 
-Save the conversation status after using the 'save_results' tool after you feel the conversation has ended or you cannot resolve the use query.
-Do not answer any irrelevant queries beyond the scope of being a customer service agent.
-"""
+#system_message = """You are a helpful customer service assistant to solve user queries regarding the products and services of ABC Corp.
+#When answering a user's question, use the tools provided to you.
+#Make sure to use the 'retrieve' tool first, and if you do not find the answer, then use the 'search' tool
+#After using a tool, the tool output will be provided back to you. 
+#Save the conversation status after using the 'save_results' tool after you feel the conversation has ended or you cannot resolve the use query.
+#Do not answer any irrelevant queries beyond the scope of being a customer service agent.
+#"""
 
 #This message is used when the search tool is removed
 system_message = """You are a helpful customer service assistant to solve user queries regarding the products and services of ABC Corp.
